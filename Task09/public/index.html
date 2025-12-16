@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики на JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Крестики-нолики</h1>
+        
+        <div id="setup-screen">
+            <h2>Настройки игры</h2>
+            <div class="form-group">
+                <label for="player-name">Ваше имя:</label>
+                <input type="text" id="player-name" value="Герой" placeholder="Введите ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="board-size">Размер поля (3-10):</label>
+                <input type="number" id="board-size" value="3" min="3" max="10">
+            </div>
+            <button id="start-game-btn">Начать новую игру</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <h2 id="status-message"></h2>
+            <div id="board-container"></div>
+            <button id="new-game-btn" class="hidden">Сыграть еще раз</button>
+        </div>
+
+        <div id="history-section">
+            <h2>История игр</h2>
+            <button id="show-history-btn">Показать историю</button>
+            <ul id="game-list"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
